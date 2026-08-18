@@ -283,49 +283,24 @@ export default function PurushShaktiPage() {
                   life.
                 </p>
 
-                {/* Slogan */}
-                <p className="text-sm text-amber-300/80 italic mb-6">
-                  "A Step Towards Healthy &amp; Happy Life"
-                </p>
 
                 {/* Price info */}
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="text-amber-200 text-sm">Special Price</span>
-                  <span className="text-amber-400 text-3xl font-extrabold">₹2800</span>
-                  <span className="text-amber-200/70 text-sm">/ Power Package (Kit)</span>
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <a href="#order">
-                    <Button
-                      size="large"
-                      className="shimmer-btn border-0 text-white font-bold px-8 py-3 h-auto text-lg rounded-xl shadow-lg shadow-amber-900/40"
-                      style={{ background: "#d97706", borderColor: "#d97706", color: "#fff" }}
-                    >
-                      🛒 Order Now – ₹2800/-
-                    </Button>
-                  </a>
-                  <a href="#benefits">
-                    <Button
-                      size="large"
-                      ghost
-                      className="border-amber-400/60 text-amber-300 hover:border-amber-400 px-8 h-auto text-base rounded-xl"
-                    >
-                      Learn More
-                    </Button>
-                  </a>
+                <div className="flex items-center justify-center lg:justify-start gap-3 mb-6 flex-wrap">
+                  <span className="text-amber-200 text-sm font-semibold">Offer Price</span>
+                  <span className="text-amber-200/60 text-lg line-through">(₹4000)</span>
+                  <span className="text-amber-400 text-4xl font-extrabold">₹2800</span>
                 </div>
               </div>
 
               {/* RIGHT – PRODUCT VISUAL */}
               <div className="flex-shrink-0 flex flex-col items-center gap-4">
-                <div className="relative w-72 md:w-96">
+                <div className="relative w-[360px] md:w-[480px]">
                   <Image
                     src="/images/purush-shakti-images2.jpeg"
                     alt="PURUSH Shakti Power Package"
-                    width={400}
-                    height={400}
-                    className="rounded-2xl drop-shadow-2xl"
+                    width={520}
+                    height={520}
+                    className="rounded-2xl drop-shadow-2xl w-full h-auto"
                     priority
                   />
                   {/* Floating tags */}
@@ -338,7 +313,7 @@ export default function PurushShaktiPage() {
                 </div>
 
                 {/* Buy Now Button */}
-                <a href="#order" className="w-full">
+                <a href="https://payments.cashfree.com/forms/purushshakti" target="_blank" rel="noopener noreferrer" className="w-full">
                   <Button
                     size="large"
                     className="shimmer-btn border-0 text-white font-bold w-full h-auto py-3 text-lg rounded-xl shadow-lg shadow-amber-900/40"
@@ -644,14 +619,16 @@ export default function PurushShaktiPage() {
 
             {/* Price Display */}
             <div className="inline-block bg-white/15 border-2 border-white/30 rounded-3xl px-12 py-8 mb-10 backdrop-blur-sm">
-              <p className="text-amber-200 text-sm font-semibold uppercase tracking-widest mb-2">
-                Special Price
-              </p>
+              <div className="flex items-center justify-center gap-3 mb-3 flex-wrap">
+                <p className="text-amber-200 text-sm font-semibold uppercase tracking-widest">
+                  Offer Price
+                </p>
+                <span className="text-white/60 text-lg line-through">(₹4000)</span>
+              </div>
               <div className="flex items-end justify-center gap-1 mb-1">
                 <span className="text-3xl font-bold text-white/80 self-start mt-3">₹</span>
                 <span className="text-7xl font-extrabold text-white leading-none">2800</span>
               </div>
-              <p className="text-amber-200/80 text-sm">PURUSH Shakti Power Package</p>
             </div>
 
             {/* Online Payment */}
@@ -663,10 +640,10 @@ export default function PurushShaktiPage() {
               >
                 <Button
                   size="large"
-                  className="border-2 border-white/60 text-white font-bold px-10 h-14 text-lg rounded-2xl shadow-xl transition-all hover:bg-white/10"
-                  style={{ background: "transparent", borderColor: "rgba(255,255,255,0.6)", color: "#fff", height: "56px" }}
+                  className="shimmer-btn border-0 text-white font-bold px-14 h-14 text-xl rounded-2xl shadow-xl"
+                  style={{ background: "#d97706", borderColor: "#d97706", color: "#fff", height: "56px" }}
                 >
-                  💳 Pay Online (Card / UPI / Net Banking)
+                  🛒 Buy Now
                 </Button>
               </a>
             </div>
