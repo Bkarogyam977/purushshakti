@@ -288,6 +288,13 @@ export default function PurushShaktiPage() {
                   "A Step Towards Healthy &amp; Happy Life"
                 </p>
 
+                {/* Price info */}
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-amber-200 text-sm">Special Price</span>
+                  <span className="text-amber-400 text-3xl font-extrabold">₹2800</span>
+                  <span className="text-amber-200/70 text-sm">/ Power Package (Kit)</span>
+                </div>
+
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                   <a href="#order">
                     <Button
@@ -314,7 +321,7 @@ export default function PurushShaktiPage() {
               <div className="flex-shrink-0 flex flex-col items-center gap-4">
                 <div className="relative w-72 md:w-96">
                   <Image
-                    src="/images/purush-shakti-images.png"
+                    src="/images/purush-shakti-images2.jpeg"
                     alt="PURUSH Shakti Power Package"
                     width={400}
                     height={400}
@@ -330,12 +337,16 @@ export default function PurushShaktiPage() {
                   </span>
                 </div>
 
-                {/* Price tag */}
-                <div className="bg-amber-500/20 border border-amber-400/50 rounded-2xl px-6 py-4 text-center">
-                  <p className="text-amber-200 text-sm mb-1">Special Price</p>
-                  <p className="text-amber-400 text-4xl font-extrabold">₹2800</p>
-                  <p className="text-amber-200/70 text-sm">Power Package (Kit)</p>
-                </div>
+                {/* Buy Now Button */}
+                <a href="#order" className="w-full">
+                  <Button
+                    size="large"
+                    className="shimmer-btn border-0 text-white font-bold w-full h-auto py-3 text-lg rounded-xl shadow-lg shadow-amber-900/40"
+                    style={{ background: "#d97706", borderColor: "#d97706", color: "#fff" }}
+                  >
+                    🛒 Buy Now – ₹2800/-
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
